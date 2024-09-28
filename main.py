@@ -19,7 +19,12 @@ def get_drawing(**kwargs):
         return get_lapunov(**kwargs)
     
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",
+                   page_title="Fast-Warmer",
+                   page_icon=":ocean:",
+    menu_items={"Report a Bug":None,
+                "About":None,
+                "Get help":None})
 logger.add(sys.stdout, level="INFO")
 if "total_likes" not in st.session_state:
     st.session_state['total_likes'] = 0
