@@ -40,7 +40,8 @@ graph TD
     A[ALS Collaborative Filtering] --> B[Fast-Warmer Core]
     C[BERT Content-Based Filtering] --> B
     D[KNN Neighborhood-Based Filtering] --> B
-    B --> E[Streamlit Frontend]```
+    B --> E[Streamlit Frontend]
+```
 
 ## 🛠️ Technologies 
 - Backend: Python, ALS, BERT, KNN
