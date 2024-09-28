@@ -13,11 +13,6 @@
 - [Architecture](#architecture)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Model Details](#model-details)
-- [Frontend](#frontend)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -41,12 +36,11 @@ It generates video recommendations for new users or videos without previous inte
 The hybrid system combines **ALS**, **BERT**, and **KNN** models into a single core for generating recommendations, visualized through the **Streamlit** frontend.
 
 ```mermaid
-graph LR
-    ALS[ALS (Collaborative)] --> FWC[Fast-Warmer Core]
-    BERT[BERT (Content-Based)] --> FWC[Fast-Warmer Core]
-    KNN[KNN (Neighborhood)] --> FWC[Fast-Warmer Core]
-    FWC --> UI[Streamlit Frontend]
-```
+graph TD
+    A[ALS Collaborative Filtering] --> B[Fast-Warmer Core]
+    C[BERT Content-Based Filtering] --> B
+    D[KNN Neighborhood-Based Filtering] --> B
+    B --> E[Streamlit Frontend]```
 
 ## 🛠️ Technologies 
 - Backend: Python, ALS, BERT, KNN
