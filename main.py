@@ -2,13 +2,12 @@ import sys
 from datetime import datetime
 from random import sample
 from efffects import get_lapunov,get_random_walk 
-from relevant import CandidatesSelector
+from src.relevant import CandidatesSelector
 import pandas as pd
 import streamlit as st
 from loguru import logger
 from pydantic import BaseModel
 import random
-import cv2
 
 
 @st.cache_data

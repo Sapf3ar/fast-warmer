@@ -1,8 +1,7 @@
 import pandas as pd
 
-from typing import List, Dict
+from typing import List
 from pydantic import BaseModel
-import pandas as pd
 
 class Item(BaseModel):
     """

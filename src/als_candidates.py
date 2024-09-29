@@ -1,5 +1,4 @@
 import argparse
-import json
 import numpy as np
 import polars as pl
 from glob import glob
